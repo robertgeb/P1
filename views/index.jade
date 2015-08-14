@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1
+    p#titulo Bem vindo ao #{title}.
+  form(method="POST" action="login")
+    .dado
+      | Matricula:
+      input(type="text" name="matricula")
+    .dado
+      | Senha:
+      input(type="password" name="senha")
+    input(type="submit", value="Entrar")#botao
